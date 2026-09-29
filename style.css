@@ -1,19 +1,20 @@
 body {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
 }
 
-.header, .footer, .info, .text, .sect1, ul {
+.header, .footer, .info, .text, .sect1, .info_layout, ul {
     display: flex;
 }
 
-.header, .sect1 {
+.header {
     flex-direction: row;
 }
 
-.info, .text {
+.info, .text, .sect1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -24,13 +25,17 @@ body {
 }
 
 .pfp{
-    width: 80px;
-    height: auto;
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
-img {
-    width: 80px;
-    height: 107px;
+.info_card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 ul {
@@ -42,11 +47,28 @@ ul {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
+h3 {
+    color: #2980b9;
+    margin-top: 15px;
+}
+.bio {
+    margin: 0;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 16px;
+    color: #1F2937;
+    font-weight: 600;
+}
 
 .nav-li, .header, .footer {
-    background-color: #1F2937;
+    background-color: #2c3e50;
     margin: 0;
     padding: 16px;
 }
@@ -66,30 +88,61 @@ a {
     margin: 0;
 }
 
-.sect1, .sect2, .sect3 {
-    padding: 12px;
-}
+
+/*  Body  */
 
 .sect1 {
-    justify-content: space-evenly;
-    align-items: center; 
+    background-color: #E5E7EB;
+    padding: 30px;
+}
+
+.info_layout {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.info_card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    width: 350px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.info_card .quote_box {
+    background-color: #E5E7EB;
+    border-radius: 8px;
+    width: 350px;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.quote {
+    display: flex;
+    justify-content: end;
+    color: gray;
+}
+em {
+    color: black;
 }
 
 .sect2 {
     display: flex;
     background-color: #E5E7EB;
-    justify-content: center;
-    padding: 40px;
+    justify-content: space-evenly;
+    padding: 30px;
 }
 
-.sect2 .text {
-    align-items: end;
-}
 
-.sect3 {
-    
-}
 
+
+/* Footer */
 .footer {
     color: white;
     justify-content: center;
