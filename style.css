@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header, .footer, .info, .text, .sect1, ul {
+    display: flex;
+}
+
+.header, .sect1 {
+    flex-direction: row;
+}
+
+.info, .text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.pfp{
+    width: 80px;
+    height: auto;
+}
+
+img {
+    width: 80px;
+    height: 107px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+
+.nav-li, .header, .footer {
+    background-color: #1F2937;
+    margin: 0;
+    padding: 16px;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.head_main{
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.head_main h1, .head_main h4 {
+    margin: 0;
+}
+
+.sect1, .sect2, .sect3 {
+    padding: 12px;
+}
+
+.sect1 {
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.sect2 {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    padding: 40px;
+}
+
+.sect2 .text {
+    align-items: end;
+}
+
+.sect3 {
+    
+}
+
+.footer {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
