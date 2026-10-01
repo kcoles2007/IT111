@@ -14,7 +14,13 @@ body {
     margin: 0;
 }
 
-.header, .footer, .info, .text, .sect1, .info_layout, ul {
+.header, 
+.footer, 
+.info, 
+.text, 
+.sect1, 
+.info_layout, 
+ul {
     display: flex;
 }
 
