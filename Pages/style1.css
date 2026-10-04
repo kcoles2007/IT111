@@ -1,3 +1,4 @@
+/* GLOBAL SETTINGS */
 * {
     box-sizing: border-box;
 }
@@ -14,6 +15,7 @@ body {
     margin: 0;
 }
 
+/* SHARED FLEXBOX ATTRIBUTES */
 .header, 
 .footer, 
 .info, 
@@ -23,6 +25,8 @@ body {
 ul {
     display: flex;
 }
+
+/* HEADER & NAVIGATION SECTION */
 
 .header {
     flex-direction: row;
@@ -35,13 +39,6 @@ ul {
     text-align: start;
 }
 
-.pfp{
-    width: 60px;
-    height: 40px;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
 .info_card img {
     width: 150px;
     height: 150px;
@@ -49,6 +46,7 @@ ul {
     object-fit: cover;
 }
 
+/* TYPOGRAPHY & LINKS */
 a {
     color: white;
     text-decoration: none;
@@ -58,9 +56,11 @@ h3 {
     color: #2980b9;
     margin-top: 15px;
 }
+
 .bio {
     margin: 0;
 }
+
 .title {
     display: flex;
     justify-content: center;
@@ -71,6 +71,7 @@ h3 {
     font-weight: 600;
 }
 
+/* NAVIGATION BAR */
 .nav-li{
     display: flex;
     flex-direction: row;
@@ -84,12 +85,14 @@ h3 {
     text-decoration: underline;
 }
 
+/* SHARED BACKGROUNDS (NAV, HEADER, FOOTER) */
 .nav-li, .header, .footer {
     background-color: #2c3e50;
     margin: 0;
     padding: 16px;
 }
 
+/* MAIN HEADER */
 .header {
     justify-content: center;
     align-items: center;
@@ -103,21 +106,23 @@ h3 {
     align-items: center;
     color: #E5E7EB;
     margin: 0;
-
 }
 
+/* REMOVE DEFAULT MARGINS */
 .head_main h1, .head_main h4 {
     margin: 0;
 }
 
 
-/*  Body  */
+/* MAIN SECTION */
 
+/* SECTION 1 */
 .sect1 {
     background-color: #E5E7EB;
     padding: 30px;
 }
 
+/* LAYOUT FOR INFO CARDS */
 .info_layout {
     flex-direction: column;
     justify-content: center;
@@ -125,6 +130,7 @@ h3 {
     gap: 30px;
 }
 
+/* INDIVIDUAL INFO CARD CONTAINER */
 .info_card {
     display: flex;
     background-color: white;
@@ -137,6 +143,7 @@ h3 {
     padding: 30px;
 }
 
+/* QUOTE BOX STYLE */
 .info_card .quote_box {
     background-color: #E5E7EB;
     border-radius: 8px;
@@ -146,12 +153,14 @@ h3 {
     border-left: 4px solid #2980b9;
 }
 
+/* QUOTE ALIGNMENT */
 .quote {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+/* LIST ALIGNMENT */
 ul {
     flex-direction: column;
     text-align: start;
@@ -159,6 +168,7 @@ ul {
     padding: 0;
 }
 
+/* SECTION 2 */
 .sect2 {
     display: flex;
     background-color: #E5E7EB;
@@ -167,7 +177,8 @@ ul {
 }
 
 
-/* Footer */
+/* FOOTER */
+
 .footer {
     color: white;
     justify-content: center;
@@ -175,12 +186,15 @@ ul {
     margin-top: auto;
 }
 
+
+/* FOR TABLET VIEW */
 @media (max-width: 768px) {
     .info_layout {
         flex-direction: column;
     }
 }
 
+/* FOR MOBILE VIEW */
 @media (max-width: 480px) {
     .header {
         flex-direction: column;
