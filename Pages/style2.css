@@ -14,6 +14,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    color: #2980b9;
+    margin-top: 15px;
+}
 
 /* HEADER & NAVIGATION SECTION */
 
@@ -29,28 +38,26 @@ body {
     padding: 16px;
 }
 
-/* SHARED ATTRIBUTES*/
-.info,
-.text,
-.sect1 {
+.head_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: start;
+    color: #E5E7EB;
+    margin: 0;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    list-style-position: inside;
-    padding: 0;
+/* REMOVE DEFAULT MARGINS*/
+.head_main h1,
+.head_main h4 {
+    margin: 0;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.pfp {
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
 .nav-li {
@@ -69,28 +76,31 @@ a {
     text-decoration: underline;
 }
 
-.head_main {
+/* SHARED ATTRIBUTES*/
+.info,
+.text,
+.sect1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #E5E7EB;
+    text-align: start;
+}
+
+/* SECTION 1 HEADING */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    margin-bottom: 16px;
+    color: #1F2937;
+    font-weight: 600;
+}
+
+.bio {
     margin: 0;
 }
-
-.pfp {
-    width: 60px;
-    height: 40px;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-/* REMOVE DEFAULT MARGINS*/
-.head_main h1,
-.head_main h4 {
-    margin: 0;
-}
-
 
 /* MAIN SECTION */
 
@@ -130,26 +140,6 @@ a {
     object-fit: cover;
 }
 
-/* SECTION 1 HEADING */
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    margin-bottom: 16px;
-    color: #1F2937;
-    font-weight: 600;
-}
-
-h3 {
-    color: #2980b9;
-    margin-top: 15px;
-}
-
-.bio {
-    margin: 0;
-}
-
 /* QUOTE BOX STYLE */
 .info_card .quote_box {
     width: 100%;
@@ -176,6 +166,13 @@ h3 {
     text-align: center;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    list-style-position: inside;
+    padding: 0;
+}
 
 /* SECTION 2*/
 .sect2 {
@@ -184,7 +181,6 @@ h3 {
     background-color: #E5E7EB;
     padding: 30px;
 }
-
 
 /* FOOTER */
 .footer {
@@ -196,7 +192,6 @@ h3 {
     margin-top: auto;
     padding: 16px;
 }
-
 
 /* FOR MOBILE VIEW */
 @media (max-width: 480px) {
